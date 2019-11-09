@@ -5,7 +5,9 @@
 # the calculator should take two values sum, 
 
 
-loop do
+
+quit = false
+until quit
     puts "options"
     puts "1. Sum"
     puts "2. Subtract"
@@ -13,7 +15,15 @@ loop do
     puts "4. Multiply"
     puts "5. Square"
     puts "q. Quit"
+
+    user_input = get.chomp
+    case user_input
+    when "q"
+        quit = true
+    end
 end
+
+
 
 
 Requirement
